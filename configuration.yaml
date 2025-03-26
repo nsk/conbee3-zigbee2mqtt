@@ -3,9 +3,9 @@ homeassistant:
   experimental_event_entities: true
 mqtt:
   base_topic: zigbee2mqtt
-  server: mqtt://192.168.1.26:1883
-  user: Azote
-  password: barbet
+  server: mqtt://serverip:1883
+  user: "yourlogin"
+  password: "yourpassword"
   include_device_information: true
   keepalive: 60
   reject_unauthorized: true
@@ -21,7 +21,7 @@ disable_automatic_update_check: false
 frontend:
   enabled: true
   port: 8888
-  host: 192.168.1.26
+  host: "yourserverip"
 version: 4
 devices:
   '0xa4c1384875e7a9e0':
