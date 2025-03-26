@@ -1,0 +1,32 @@
+homeassistant:
+  enabled: true
+  experimental_event_entities: true
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://192.168.1.26:1883
+  user: Azote
+  password: barbet
+  include_device_information: true
+  keepalive: 60
+  reject_unauthorized: true
+  version: 4
+serial:
+  port: /dev/ttyUSB0
+  adapter: deconz
+  baudrate: 115200
+log_directory: /home/pi/data//log
+ota:
+  update_check_interval: 10
+disable_automatic_update_check: false
+frontend:
+  enabled: true
+  port: 8888
+  host: 192.168.1.26
+version: 4
+devices:
+  '0xa4c1384875e7a9e0':
+    friendly_name: '0xa4c1384875e7a9e0'
+  '0xa4c13800ab3b29fa':
+    friendly_name: '0xa4c13800ab3b29fa'
+  '0xbc33acfffe0d9751':
+    friendly_name: '0xbc33acfffe0d9751'
